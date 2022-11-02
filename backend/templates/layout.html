@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODOKAR</title>
+    <link rel="icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+    <style>
+        .message {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid main">
+    <nav>
+        <a href="{{ url_for('view1.get_index') }}">Welcome to Notable App</a>
+        <br>
+    </nav>
+    <hr>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+
+</body>
+</html>    
